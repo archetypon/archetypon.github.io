@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.smooth-div {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-one {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/wave-1.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: antiquewhite;
+    display: grid;
+    grid-template: "header header" 15vh "nav main" 1fr "nav footer" 15vh / 20vw 1fr;
+    animation-name: "flow";
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flow {
+    33% {
+        background-image: url('../img/wave-2.svg');
+    }
+    66% {
+        background-image: url('../img/wave-3.svg');
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    padding-right: 5vw;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.mg-w {
+    border: 1px solid antiquewhite;
+}
+
+.md {
+    height: 15vw;
+    width: 15vw;
+}
+
+.over-hidden {
+    overflow: hidden;
+}
+
+#my-photo {
+    height: 15vw;
+    filter: sepia(60%);
+}
+
+#photo-frame {
+    padding: 3px;
+}
+
+#l-ot-grid {
+    position: relative;
+    width: 20vw;
+    float: left;
+    text-align: center;
+}
+
+#r-ot-grid {
+    position: relative;
+    text-align: justify;
+    width: 50vw;
+    float: right;
+}

@@ -1,0 +1,12 @@
+@media (max-width: 800px) {
+	#l-ot-grid {
+		width: 70vw;
+		float: none;
+		text-align: center;
+	}
+	#r-ot-grid {
+		text-align: justify;
+		width: 70vw;
+		float: none;
+	}
+}
